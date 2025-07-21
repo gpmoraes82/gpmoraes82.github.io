@@ -67,10 +67,9 @@ nav ul li a {
     display: block;
 }
 
-nav ul li a:hover {
-    /* background: var(--cor-texto); */
+/* nav ul li a:hover {
     color: #e0141d;
-}
+} */
 
 /* MAIN */
 main {
@@ -109,6 +108,22 @@ footer {
     color: white;
     text-align: center;
     padding: 1rem;
+}
+
+#nav-link a {
+  color: white;
+}
+
+#nav-link a:hover {
+  color: goldenrod;
+}
+
+#contato a {
+  color: var(--cor-titulos);
+}
+
+#contato a:hover {
+  color: goldenrod;
 }
 
 /* RESPONSIVIDADE */
