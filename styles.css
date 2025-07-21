@@ -1,0 +1,128 @@
+/* RESET básico para consistência */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html {
+    font-family: Arial, sans-serif;
+    line-height: 1.6;
+}
+
+h1 {
+    font-family: 'Jockey One', sans-serif;
+    font-weight: normal;
+    padding: 0px;
+    font-size: 30px;
+    text-transform: uppercase;
+}
+
+h2 {
+    font-family: 'Jockey One', sans-serif;
+    font-weight: normal;
+    font-size: 30px;
+    text-transform: uppercase;
+}
+
+/* Variáveis CSS */
+:root {
+    --cor-primaria: #222;
+    --cor-secundaria: #f4f4f4;
+    --cor-titulos: #0077cc;
+    --cor-texto: #333;
+
+}
+
+/* HEADER */
+header {
+    background: var(--cor-primaria);
+    color: white;
+    text-align: center;
+    padding: 1rem;
+}
+
+header img.foto-perfil {
+    width: 120px;
+    height: 120px;
+    border-radius: 50%;
+    margin-bottom: 0.5rem;
+}
+
+/* NAV */
+nav {
+    background: #222;
+    margin-top: -1px;
+}
+
+nav ul {
+    display: flex;
+    justify-content: center;
+    list-style: none;
+}
+
+nav ul li a {
+    text-decoration: none;
+    padding: 1rem;
+    display: block;
+}
+
+nav ul li a:hover {
+    /* background: var(--cor-texto); */
+    color: #e0141d;
+}
+
+/* MAIN */
+main {
+    padding: 2rem;
+}
+
+section {
+
+    background: white;
+    border-radius: 8px;
+    box-sizing: border-box;
+    max-width: 750px;
+
+    margin: 15px auto 25px auto;
+    padding: 10px 50px 25px 50px;
+
+    background-color: rgba(255, 255, 255, 0.95);
+    box-shadow: 0px 0px 10px 1px #000;
+}
+
+section h2 {
+    color: var(--cor-titulos);
+    margin-bottom: 0.5rem;
+}
+
+/* ARTICLE */
+article {
+    margin-bottom: 1rem;
+    padding: 1rem;
+    border-left: 4px solid var(--cor-primaria);
+}
+
+/* FOOTER */
+footer {
+    background: var(--cor-primaria);
+    color: white;
+    text-align: center;
+    padding: 1rem;
+}
+
+/* RESPONSIVIDADE */
+@media (max-width: 400px) {
+    nav ul {
+        flex-direction: column;
+    }
+
+    main {
+        padding: 1rem;
+    }
+
+    header img.foto-perfil {
+        width: 80px;
+        height: 80px;
+    }
+}
