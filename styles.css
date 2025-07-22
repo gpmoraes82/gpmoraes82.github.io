@@ -27,7 +27,7 @@ h2 {
 
 /* Variáveis CSS */
 :root {
-    --cor-primaria: #222;
+    --cor-primaria: #222222e1;
     --cor-secundaria: #f4f4f4;
     --cor-titulos: #0077cc;
     --cor-texto: #333;
@@ -51,8 +51,8 @@ header img.foto-perfil {
 
 /* NAV */
 nav {
-    background: #222;
-    margin-top: -1px;
+    background: var(--cor-primaria);
+    margin-top: -0px;
 }
 
 nav ul {
